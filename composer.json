@@ -1,0 +1,21 @@
+{
+    "name": "litecms/faq",
+    "description": "Faq package for litecms.",
+    "keywords": ["lavalite", "Faq"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Litecms\\Faq\\": "src/Litecms/Faq"
+        }
+    },
+    "minimum-stability": "dev"
+}
