@@ -7,6 +7,10 @@ return [
      */
     'name'        => 'Faq',
     'names'       => 'Faqs',
+    'user_name'   => 'My <span>Faq</span>',
+    'user_names'  => 'My <span>Faqs</span>',
+    'create'      => 'Create My Faq',
+    'edit'        => 'Update My Faq',
 
     /**
      * Options for select/radio/check.

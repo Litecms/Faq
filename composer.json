@@ -1,11 +1,11 @@
 {
     "name": "litecms/faq",
     "description": "Faq package for litecms.",
-    "keywords": ["lavalite", "Faq"],
+    "keywords": ["lavalite","litecms","Faq"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Lavalite",
+            "name": "Litecms",
             "email": "info@lavalite.org"
         }
     ],

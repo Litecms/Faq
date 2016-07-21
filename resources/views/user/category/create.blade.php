@@ -19,5 +19,6 @@
     ->files('true')
     ->action(trans_url('user/faq/category'))!!}
             @include('faq::user.category.partial.entry')
+   
     {!! Form::close() !!}
 </div>
