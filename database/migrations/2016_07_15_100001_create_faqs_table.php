@@ -22,7 +22,7 @@ class CreateFaqsTable extends Migration
             $table->text('answer')->nullable();
             $table->integer('category_id')->nullable();
             $table->string('slug', 200)->nullable();
-            $table->enum('status', ['draft', 'published', 'hidden', 'suspended', 'spam'])->default('draft')->nullable();
+            $table->enum('status', ['show', 'hide'])->default('hide')->nullable();
             $table->integer('user_id')->nullable();
             $table->string('upload_folder', 100)->nullable();
             $table->softDeletes();
@@ -36,7 +36,7 @@ class CreateFaqsTable extends Migration
             $table->increments('id');
             $table->string('name', 50)->nullable();
             $table->string('slug', 200)->nullable();
-            $table->enum('status', ['draft', 'published', 'hidden', 'suspended', 'spam'])->default('draft')->nullable();
+            $table->enum('status', ['show', 'hide'])->default('hide')->nullable();
             $table->integer('user_id')->nullable();
             $table->string('upload_folder', 100)->nullable();
             $table->softDeletes();
