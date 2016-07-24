@@ -92,17 +92,26 @@ class FaqTableSeeder extends Seeder
             [
                 'parent_id'   => 1,
                 'key'         => null,
+                'url'         => 'admin/faq',
+                'name'        => 'Faq',
+                'description' => null,
+                'icon'        => 'fa fa-question-circle',
+                'target'      => null,
+                'order'       => 150,
+                'status'      => 1,
+            ],
+
+            [
+                'parent_id'   => 1,
+                'key'         => null,
                 'url'         => 'admin/faq/faq',
                 'name'        => 'Faqs',
                 'description' => null,
                 'icon'        => 'fa fa-question-circle',
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 151,
                 'status'      => 1,
             ],
-          
-
-
 
             [
                 'parent_id'   => 1,
@@ -112,7 +121,7 @@ class FaqTableSeeder extends Seeder
                 'description' => null,
                 'icon'        => 'fa fa-bars',
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 152,
                 'status'      => 1,
             ],
 
@@ -124,7 +133,7 @@ class FaqTableSeeder extends Seeder
                 'description' => null,
                 'icon'        => null,
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 150,
                 'status'      => 1,
             ],
 
