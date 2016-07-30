@@ -31,7 +31,7 @@ return [
         'fillable'      => ['user_id', 'question', 'answer', 'category_id', 'status','upload_folder'],
         'translate'     => [],
 
-        'upload-folder' => '/uploads/faq/faq',
+        'upload_folder' => '/faq/faq',
         'uploads'       => [
             'single'   => [],
             'multiple' => [],

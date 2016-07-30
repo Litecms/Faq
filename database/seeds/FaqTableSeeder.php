@@ -10,6 +10,7 @@ class FaqTableSeeder extends Seeder
 
             [
                 'user_id'     => '1',
+                 'user_type'     => 'App\\User',
                 'question'    => 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET ?',
                 'slug'        => '',
                 'answer'      => 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.',
@@ -21,6 +22,7 @@ class FaqTableSeeder extends Seeder
             ],
             [
                 'user_id'     => '1',
+                 'user_type'     => 'App\\User',
                 'question'    => 'DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE ?',
                 'slug'        => '',
                 'answer'      => 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.',
@@ -32,6 +34,7 @@ class FaqTableSeeder extends Seeder
             ],
             [
                 'user_id'     => '1',
+                 'user_type'     => 'App\\User',
                 'question'    => 'DUIS AUTE IRURE DOLOR IN REPREHENDE',
                 'slug'        => '',
                 'answer'      => 'gfhft',
@@ -43,6 +46,7 @@ class FaqTableSeeder extends Seeder
             ],
             [
                 'user_id'     => '1',
+                 'user_type'     => 'App\\User',
                 'question'    => 'EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA DESERUNT ?',
                 'slug'        => '',
                 'answer'      => 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.',
@@ -59,6 +63,7 @@ class FaqTableSeeder extends Seeder
 
             [
                 'user_id'    => '1',
+                 'user_type'     => 'App\\User',
                 'name'       => 'LOREM',
                 'slug'       => 'lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et',
                 'status'     => 'hide',
@@ -68,6 +73,7 @@ class FaqTableSeeder extends Seeder
             ],
             [
                 'user_id'    => '1',
+                 'user_type'     => 'App\\User',
                 'name'       => 'DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTAT',
                 'slug'       => 'duis-aute-irure-dolor-in-reprehenderit-in-voluptate',
                 'status'     => 'show',
@@ -77,6 +83,7 @@ class FaqTableSeeder extends Seeder
             ],
             [
                 'user_id'    => '1',
+                'user_type'     => 'App\\User',
                 'name'       => 'BASIC',
                 'slug'       => 'basic',
                 'status'     => 'show',
