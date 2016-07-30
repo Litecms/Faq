@@ -13,7 +13,6 @@ use Litecms\Faq\Models\Category;
  */
 class CategoryAdminController extends BaseController
 {
-    
 
     /**
      * The authentication guard that should be used.
@@ -36,7 +35,7 @@ class CategoryAdminController extends BaseController
         $this->middleware('web');
         $this->middleware('auth:admin.web');
         $this->setupTheme(config('theme.themes.admin.theme'), config('theme.themes.admin.layout'));
-          $this->repository = $category;
+        $this->repository = $category;
         parent::__construct();
     }
 
@@ -116,6 +115,7 @@ class CategoryAdminController extends BaseController
         try {
             $attributes = $request->all();
             $attributes['user_id'] = user_id('admin.web');
+            $attributes['user_type'] = user_type();
             $category = $this->repository->create($attributes);
 
             return response()->json([

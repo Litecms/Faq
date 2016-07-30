@@ -21,7 +21,6 @@ class FaqAdminController extends BaseController
      */
     public $guard = 'admin.web';
 
-    
     /**
      * Initialize faq controller.
      *
@@ -36,7 +35,7 @@ class FaqAdminController extends BaseController
         $this->middleware('web');
         $this->middleware('auth:admin.web');
         $this->setupTheme(config('theme.themes.admin.theme'), config('theme.themes.admin.layout'));
-         $this->repository = $faq;
+        $this->repository = $faq;
         parent::__construct();
     }
 
@@ -116,6 +115,7 @@ class FaqAdminController extends BaseController
         try {
             $attributes = $request->all();
             $attributes['user_id'] = user_id('admin.web');
+            $attributes['user_type'] = user_type();
             $faq = $this->repository->create($attributes);
 
             return response()->json([

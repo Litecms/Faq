@@ -10,9 +10,8 @@ use Litecms\Faq\Models\Faq;
 
 class FaqUserController extends BaseController
 {
-    
 
-     /**
+    /**
      * The authentication guard that should be used.
      *
      * @var string
@@ -32,7 +31,7 @@ class FaqUserController extends BaseController
         $this->middleware('auth:web');
         $this->middleware('auth.active:web');
         $this->setupTheme(config('theme.themes.user.theme'), config('theme.themes.user.layout'));
-         $this->repository = $faq;
+        $this->repository = $faq;
         parent::__construct();
     }
 
@@ -96,6 +95,7 @@ class FaqUserController extends BaseController
         try {
             $attributes = $request->all();
             $attributes['user_id'] = user_id();
+            $attributes['user_type'] = user_type();
             $faq = $this->repository->create($attributes);
 
             return redirect(trans_url('/user/faq/faq'))

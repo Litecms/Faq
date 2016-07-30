@@ -10,21 +10,20 @@ use Litecms\Faq\Models\Category;
 
 class CategoryUserController extends BaseController
 {
-   
 
-     /**
+    /**
      * The authentication guard that should be used.
      *
      * @var string
      */
     protected $guard = 'web';
 /**
-     * Initialize category controller.
-     *
-     * @param type CategoryRepositoryInterface $category
-     *
-     * @return type
-     */
+ * Initialize category controller.
+ *
+ * @param type CategoryRepositoryInterface $category
+ *
+ * @return type
+ */
     protected $home = 'home';
 
     public function __construct(CategoryRepositoryInterface $category)
@@ -33,7 +32,7 @@ class CategoryUserController extends BaseController
         $this->middleware('auth:web');
         $this->middleware('auth.active:web');
         $this->setupTheme(config('theme.themes.user.theme'), config('theme.themes.user.layout'));
-         $this->repository = $category;
+        $this->repository = $category;
         parent::__construct();
     }
 
@@ -97,6 +96,7 @@ class CategoryUserController extends BaseController
         try {
             $attributes = $request->all();
             $attributes['user_id'] = user_id();
+            $attributes['user_type'] = user_type();
             $category = $this->repository->create($attributes);
 
             return redirect(trans_url('/user/faq/category'))
