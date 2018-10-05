@@ -27,7 +27,7 @@
                 "Litecms\\Faq\\Providers\\FaqServiceProvider"
             ],
             "aliases": {
-                "Faq" : "Litecms\\Faq\\Facades\\Faq",
+                "Faq" : "Litecms\\Faq\\Facades\\Faq"
             }
         }
     },
