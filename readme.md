@@ -1,17 +1,15 @@
-Laravel package that provides faq management facility for the Lavalite cms.
+Laravel package that provides faq management facility for lavalite CMS.
 
 ## Installation
 
-Begin by installing this package through Composer.
+Require this package with composer. 
 
     composer require litecms/faq
 
-## Migration and seeds**
+Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
 
-    php artisan migrate
-    php artisan db:seed --class=Litecms\\FaqTableSeeder
 
-## Publishing files
+## Publishing
 
 **Configuration**
 
@@ -21,18 +19,20 @@ Begin by installing this package through Composer.
 
     php artisan vendor:publish --provider="Litecms\Faq\Providers\FaqServiceProvider" --tag="lang"
 
+**Files**
+
+    php artisan vendor:publish --provider="Litecms\Faq\Providers\FaqServiceProvider" --tag="storage"
+
 ### Views
 
-Publishes to vendor folder
+Publish views to resources\views\vendor directory
 
     php artisan vendor:publish --provider="Litecms\Faq\Providers\FaqServiceProvider" --tag="view"
 
-
-Publishes admin view admin theme
+Publishes admin view to admin theme
 
     php artisan theme:publish --provider="Litecms\Faq\Providers\FaqServiceProvider" --view="admin" --theme="admin"
 
-
-Publishes piblic view public theme
+Publishes public view to public theme
 
     php artisan theme:publish --provider="Litecms\Faq\Providers\FaqServiceProvider" --view="public" --theme="public"
