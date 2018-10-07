@@ -40,6 +40,11 @@ If you\'re not using your FAQ page to its full potential, here are some of the q
 
         ]);
 
+        DB::table(config('litecms.faq.category.model.table'))->insert([
+            ['id' => '1', 'name' => 'General', 'slug' => 'general', 'status' => 'show', 'user_type' => 'App\\User', 'user_id' => '1', 'upload_folder' => null, 'deleted_at' => null, 'created_at' => '2018-01-30 10:05:48', 'updated_at' => '2018-01-30 10:05:54'],
+            ['id' => '2', 'name' => 'Standard', 'slug' => 'standard', 'status' => 'show', 'user_type' => 'App\\User', 'user_id' => '1', 'upload_folder' => null, 'deleted_at' => null, 'created_at' => '2018-01-30 10:06:05', 'updated_at' => '2018-01-30 10:06:05'],
+            ['id' => '3', 'name' => 'Basic', 'slug' => 'basic', 'status' => 'show', 'user_type' => 'App\\User', 'user_id' => '1', 'upload_folder' => null, 'deleted_at' => null, 'created_at' => '2018-01-30 10:06:12', 'updated_at' => '2018-01-30 10:06:12'],
+        ]);
         DB::table('permissions')->insert([
             [
                 'slug' => 'faq.faq.view',
@@ -56,6 +61,22 @@ If you\'re not using your FAQ page to its full potential, here are some of the q
             [
                 'slug' => 'faq.faq.delete',
                 'name' => 'Delete Faq',
+            ],
+            [
+                'slug' => 'faq.category.view',
+                'name' => 'View Category',
+            ],
+            [
+                'slug' => 'faq.category.create',
+                'name' => 'Create Category',
+            ],
+            [
+                'slug' => 'faq.category.edit',
+                'name' => 'Update Category',
+            ],
+            [
+                'slug' => 'faq.category.delete',
+                'name' => 'Delete Category',
             ],
             [
                 'slug' => 'faq.category.view',
@@ -102,7 +123,7 @@ If you\'re not using your FAQ page to its full potential, here are some of the q
             ],
 
             [
-                'parent_id'   => 3,
+                'parent_id'   => 4,
                 'key'         => null,
                 'url'         => 'faq',
                 'name'        => 'Faq',
