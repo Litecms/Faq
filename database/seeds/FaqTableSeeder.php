@@ -125,7 +125,19 @@ If you\'re not using your FAQ page to its full potential, here are some of the q
             [
                 'parent_id'   => 4,
                 'key'         => null,
-                'url'         => 'faq',
+                'url'         => 'faqs',
+                'name'        => 'Faq',
+                'description' => null,
+                'icon'        => null,
+                'target'      => null,
+                'order'       => 190,
+                'status'      => 1,
+            ],
+
+            [
+                'parent_id'   => 5,
+                'key'         => null,
+                'url'         => 'faqs',
                 'name'        => 'Faq',
                 'description' => null,
                 'icon'        => null,
