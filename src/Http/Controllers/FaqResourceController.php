@@ -48,7 +48,7 @@ class FaqResourceController extends BaseController
 
         $faqs = $this->repository->paginate();
 
-        return $this->response->title(trans('faq::faq.names'))
+        return $this->response->setMetaTitle(trans('faq::faq.names'))
             ->view('faq::faq.index', true)
             ->data(compact('faqs'))
             ->output();
@@ -71,7 +71,7 @@ class FaqResourceController extends BaseController
             $view = 'faq::faq.new';
         }
 
-        return $this->response->title(trans('app.view') . ' ' . trans('faq::faq.name'))
+        return $this->response->setMetaTitle(trans('app.view') . ' ' . trans('faq::faq.name'))
             ->data(compact('faq'))
             ->view($view, true)
             ->output();
@@ -88,7 +88,7 @@ class FaqResourceController extends BaseController
     {
 
         $faq = $this->repository->newInstance([]);
-        return $this->response->title(trans('app.new') . ' ' . trans('faq::faq.name')) 
+        return $this->response->setMetaTitle(trans('app.new') . ' ' . trans('faq::faq.name')) 
             ->view('faq::faq.create', true) 
             ->data(compact('faq'))
             ->output();
@@ -134,7 +134,7 @@ class FaqResourceController extends BaseController
      */
     public function edit(FaqRequest $request, Faq $faq)
     {
-        return $this->response->title(trans('app.edit') . ' ' . trans('faq::faq.name'))
+        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('faq::faq.name'))
             ->view('faq::faq.edit', true)
             ->data(compact('faq'))
             ->output();

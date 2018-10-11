@@ -38,7 +38,7 @@ class FaqPublicController extends BaseController
         })->paginate();
 
 
-        return $this->response->title(trans('faq::faq.names'))
+        return $this->response->setMetaTitle(trans('faq::faq.names'))
             ->view('faq::public.faq.index')
             ->data(compact('faqs'))
             ->output();
@@ -60,7 +60,7 @@ class FaqPublicController extends BaseController
         })->paginate();
 
 
-        return $this->response->title(trans('faq::faq.names'))
+        return $this->response->setMetaTitle(trans('faq::faq.names'))
             ->view('faq::public.faq.index')
             ->data(compact('faqs'))
             ->output();
@@ -80,7 +80,7 @@ class FaqPublicController extends BaseController
                          ->where('slug', $slug);
         })->first(['*']);
 
-        return $this->response->title($faq->name . trans('faq::faq.name'))
+        return $this->response->setMetaTitle($faq->name . trans('faq::faq.name'))
             ->view('faq::public.faq.show')
             ->data(compact('faq'))
             ->output();
