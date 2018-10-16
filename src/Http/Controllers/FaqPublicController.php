@@ -39,7 +39,7 @@ class FaqPublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('faq::faq.names'))
-            ->view('faq::public.faq.index')
+            ->view('faq::faq.index')
             ->data(compact('faqs'))
             ->output();
     }
@@ -61,7 +61,7 @@ class FaqPublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('faq::faq.names'))
-            ->view('faq::public.faq.index')
+            ->view('faq::faq.index')
             ->data(compact('faqs'))
             ->output();
     }
@@ -81,7 +81,7 @@ class FaqPublicController extends BaseController
         })->first(['*']);
 
         return $this->response->setMetaTitle($faq->name . trans('faq::faq.name'))
-            ->view('faq::public.faq.show')
+            ->view('faq::faq.show')
             ->data(compact('faq'))
             ->output();
     }

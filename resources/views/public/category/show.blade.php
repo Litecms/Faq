@@ -1,10 +1,10 @@
-            @include('faq::public.category.partial.header')
+            @include('faq::category.partial.header')
 
             <section class="single">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            @include('faq::public.category.partial.aside')
+                            @include('faq::category.partial.aside')
                         </div>
                         <div class="col-md-9 ">
                             <div class="area">

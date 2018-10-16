@@ -1,4 +1,4 @@
-@include('faq::public.faq.partial.header')
+@include('faq::faq.partial.header')
 <section class="content">
                 <div class="container">
                   @forelse(Faq::selectCategories() as $key => $category)
